@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>杨可欣 | 视光师 & 平面设计师</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Steam风格顶部导航 -->
+    <div class="top-bar">
+        <div class="top-bar-content">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-eye"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-name">YANG KEXIN</span>
+                    <span class="logo-subtitle">视光师 & 设计师</span>
+                </div>
+            </div>
+            
+            <nav class="main-nav">
+                <a href="#home" class="nav-link active" data-section="home">
+                    <i class="fas fa-home"></i>
+                    <span class="nav-text">主页</span>
+                </a>
+                <a href="#about" class="nav-link" data-section="about">
+                    <i class="fas fa-user"></i>
+                    <span class="nav-text">关于</span>
+                </a>
+                <a href="#works" class="nav-link" data-section="works">
+                    <i class="fas fa-palette"></i>
+                    <span class="nav-text">作品</span>
+                </a>
+                <a href="#contact" class="nav-link" data-section="contact">
+                    <i class="fas fa-comments"></i>
+                    <span class="nav-text">留言</span>
+                </a>
+            </nav>
+            
+            <div class="theme-toggle">
+                <button id="themeBtn">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- 主内容区域 -->
+    <main class="main-content">
+        <!-- 个人简介卡片 -->
+        <section id="home" class="content-section active">
+            <div class="profile-card">
+                <!-- 背景装饰元素 -->
+                <div class="bg-elements">
+                    <div class="bg-circle circle-1"></div>
+                    <div class="bg-circle circle-2"></div>
+                    <div class="bg-circle circle-3"></div>
+                </div>
+                
+                <div class="profile-header">
+                    <div class="avatar-container">
+                        <div class="avatar">
+                            <div class="avatar-inner">
+                                <span class="avatar-text">YK</span>
+                            </div>
+                            <div class="avatar-glow"></div>
+                        </div>
+                        <div class="online-status">
+                            <div class="status-dot"></div>
+                            <span class="status-text">在线</span>
+                        </div>
+                    </div>
+                    
+                    <div class="profile-info">
+                        <h1 class="profile-name">
+                            <span class="name-text">杨可欣</span>
+                            <span class="name-glow"></span>
+                        </h1>
+                        
+                        <div class="profile-tags">
+                            <span class="tag tag-optometrist">
+                                <i class="fas fa-eye"></i>
+                                国家二级验光师
+                            </span>
+                            <span class="tag tag-designer">
+                                <i class="fas fa-pencil-alt"></i>
+                                平面设计师
+                            </span>
+                        </div>
+                        
+                        <p class="profile-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            中国 · 上海
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="profile-stats">
+                    <div class="stat-item" data-count="5">
+                        <div class="stat-value">5+</div>
+                        <div class="stat-label">年从业经验</div>
+                    </div>
+                    <div class="stat-item" data-count="200">
+                        <div class="stat-value">200+</div>
+                        <div class="stat-label">设计作品</div>
+                    </div>
+                    <div class="stat-item" data-count="98">
+                        <div class="stat-value">98%</div>
+                        <div class="stat-label">客户满意度</div>
+                    </div>
+                </div>
+                
+                <div class="profile-bio">
+                    <h3><i class="fas fa-quote-left"></i> 关于我</h3>
+                    <p>我是一名专业的视光师和平面设计师。白天，我在眼镜店为顾客提供专业的验光服务；夜晚，我是一位自由平面设计师，专注于品牌设计和视觉传达。我相信，好的视觉设计就像一副合适的眼镜，能让世界变得更清晰、更美好。</p>
+                </div>
+                
+                <div class="action-buttons">
+                    <button class="btn btn-primary" id="viewWorksBtn">
+                        <i class="fas fa-palette"></i> 
+                        <span>查看作品</span>
+                    </button>
+                    <button class="btn btn-secondary" id="contactBtn">
+                        <i class="fas fa-comment"></i>
+                        <span>留言联系</span>
+                    </button>
+                </div>
+                
+                <div class="scroll-indicator">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- 关于页面 -->
+        <section id="about" class="content-section">
+            <div class="section-header">
+                <h2>
+                    <span class="section-icon"><i class="fas fa-user"></i></span>
+                    <span class="section-title">专业背景</span>
+                </h2>
+                <p class="section-subtitle">视光与设计的双重视界</p>
+            </div>
+            
+            <div class="about-container">
+                <div class="about-card" data-aos="fade-right">
+                    <div class="about-card-inner">
+                        <div class="about-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3>视光师 · 国家二级验光员</h3>
+                        <div class="about-details">
+                            <p><strong>专业领域：</strong></p>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> 全面眼视光检查与评估</li>
+                                <li><i class="fas fa-check-circle"></i> 近视、远视、散光验光</li>
+                                <li><i class="fas fa-check-circle"></i> 老视验配与渐进多焦点镜片适配</li>
+                                <li><i class="fas fa-check-circle"></i> 儿童视力保健与近视防控</li>
+                                <li><i class="fas fa-check-circle"></i> 隐形眼镜验配与指导</li>
+                            </ul>
+                            <p><strong>执业机构：</strong> 明视眼镜连锁店</p>
+                            <p><strong>从业时间：</strong> 2019年至今</p>
+                        </div>
+                        <div class="card-glow"></div>
+                    </div>
+                </div>
+                
+                <div class="about-card" data-aos="fade-left">
+                    <div class="about-card-inner">
+                        <div class="about-icon">
+                            <i class="fas fa-pencil-alt"></i>
+                        </div>
+                        <h3>平面设计师</h3>
+                        <div class="about-details">
+                            <p><strong>设计专长：</strong></p>
+                            <ul>
+                                <li><i class="fas fa-star"></i> 品牌识别设计（Logo/VI）</li>
+                                <li><i class="fas fa-star"></i> 宣传册与画册设计</li>
+                                <li><i class="fas fa-star"></i> 社交媒体视觉设计</li>
+                                <li><i class="fas fa-star"></i> 包装设计</li>
+                                <li><i class="fas fa-star"></i> UI/UX界面设计</li>
+                            </ul>
+                            <p><strong>常用工具：</strong></p>
+                            <div class="skills-tags">
+                                <span class="skill-tag">
+                                    <i class="fab fa-adobe"></i> Photoshop
+                                </span>
+                                <span class="skill-tag">
+                                    <i class="fab fa-adobe"></i> Illustrator
+                                </span>
+                                <span class="skill-tag">
+                                    <i class="fab fa-figma"></i> Figma
+                                </span>
+                            </div>
+                            <p><strong>服务模式：</strong> 自由接稿，远程协作</p>
+                        </div>
+                        <div class="card-glow"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="timeline" data-aos="fade-up">
+                <h3><i class="fas fa-history"></i> 时间线</h3>
+                <div class="timeline-item">
+                    <div class="timeline-date">2022 - 至今</div>
+                    <div class="timeline-content">
+                        <h4>自由平面设计师</h4>
+                        <p>为多个品牌提供视觉设计服务，累计完成100+设计项目</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2019 - 至今</div>
+                    <div class="timeline-content">
+                        <h4>明视眼镜 · 视光师</h4>
+                        <p>获得国家二级验光员资格，专注于专业验光与视力保健</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2015 - 2019</div>
+                    <div class="timeline-content">
+                        <h4>上海视觉艺术学院</h4>
+                        <p>平面设计专业，学士学位</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 作品展示页面 -->
+        <section id="works" class="content-section">
+            <div class="section-header">
+                <h2>
+                    <span class="section-icon"><i class="fas fa-palette"></i></span>
+                    <span class="section-title">设计作品集</span>
+                </h2>
+                <p class="section-subtitle">视觉创意与商业设计的融合</p>
+            </div>
+            
+            <div class="works-filter">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-th-large"></i> 全部作品
+                </button>
+                <button class="filter-btn" data-filter="branding">
+                    <i class="fas fa-tag"></i> 品牌设计
+                </button>
+                <button class="filter-btn" data-filter="print">
+                    <i class="fas fa-book"></i> 印刷品
+                </button>
+                <button class="filter-btn" data-filter="digital">
+                    <i class="fas fa-desktop"></i> 数字媒体
+                </button>
+                <button class="filter-btn" data-filter="packaging">
+                    <i class="fas fa-box"></i> 包装设计
+                </button>
+            </div>
+            
+            <div class="works-grid">
+                <!-- 作品1 -->
+                <div class="work-item" data-category="branding" data-aos="zoom-in">
+                    <div class="work-preview">
+                        <div class="work-image img-1"></div>
+                        <div class="work-overlay">
+                            <div class="overlay-content">
+                                <h4>晨曦咖啡品牌视觉系统</h4>
+                                <p>完整的品牌识别设计</p>
+                                <button class="work-view-btn">查看详情</button>
+                            </div>
+                        </div>
+                        <div class="work-badge">热门</div>
+                    </div>
+                    <div class="work-info">
+                        <h3>晨曦咖啡品牌视觉系统</h3>
+                        <p>完整的品牌识别设计，包括Logo、色彩系统和应用规范</p>
+                        <div class="work-tags">
+                            <span class="work-tag">品牌设计</span>
+                            <span class="work-tag">Logo设计</span>
+                            <span class="work-tag">2023</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 作品2 -->
+                <div class="work-item" data-category="print" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="work-preview">
+                        <div class="work-image img-2"></div>
+                        <div class="work-overlay">
+                            <div class="overlay-content">
+                                <h4>环保组织年度报告</h4>
+                                <p>40页画册设计</p>
+                                <button class="work-view-btn">查看详情</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-info">
+                        <h3>环保组织年度报告</h3>
+                        <p>40页画册设计，以自然元素为视觉主题</p>
+                        <div class="work-tags">
+                            <span class="work-tag">画册设计</span>
+                            <span class="work-tag">排版</span>
+                            <span class="work-tag">2023</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 作品3 -->
+                <div class="work-item" data-category="digital" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="work-preview">
+                        <div class="work-image img-3"></div>
+                        <div class="work-overlay">
+                            <div class="overlay-content">
+                                <h4>健康APP界面设计</h4>
+                                <p>移动端健康管理应用</p>
+                                <button class="work-view-btn">查看详情</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-info">
+                        <h3>健康APP界面设计</h3>
+                        <p>移动端健康管理应用UI/UX设计</p>
+                        <div class="work-tags">
+                            <span class="work-tag">UI设计</span>
+                            <span class="work-tag">用户体验</span>
+                            <span class="work-tag">2022</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 作品4 -->
+                <div class="work-item" data-category="packaging" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="work-preview">
+                        <div class="work-image img-4"></div>
+                        <div class="work-overlay">
+                            <div class="overlay-content">
+                                <h4>有机茶叶包装设计</h4>
+                                <p>系列化茶叶包装</p>
+                                <button class="work-view-btn">查看详情</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-info">
+                        <h3>有机茶叶包装设计</h3>
+                        <p>系列化茶叶包装，强调自然与可持续理念</p>
+                        <div class="work-tags">
+                            <span class="work-tag">包装设计</span>
+                            <span class="work-tag">可持续设计</span>
+                            <span class="work-tag">2022</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 作品5 -->
+                <div class="work-item" data-category="branding" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="work-preview">
+                        <div class="work-image img-5"></div>
+                        <div class="work-overlay">
+                            <div class="overlay-content">
+                                <h4>独立书店视觉识别</h4>
+                                <p>小型独立书店品牌</p>
+                                <button class="work-view-btn">查看详情</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-info">
+                        <h3>独立书店视觉识别</h3>
+                        <p>为小型独立书店打造的品牌视觉系统</p>
+                        <div class="work-tags">
+                            <span class="work-tag">品牌设计</span>
+                            <span class="work-tag">视觉识别</span>
+                            <span class="work-tag">2021</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 作品6 -->
+                <div class="work-item" data-category="digital" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="work-preview">
+                        <div class="work-image img-6"></div>
+                        <div class="work-overlay">
+                            <div class="overlay-content">
+                                <h4>音乐节社交媒体视觉</h4>
+                                <p>系列社交媒体海报</p>
+                                <button class="work-view-btn">查看详情</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-info">
+                        <h3>音乐节社交媒体视觉</h3>
+                        <p>系列社交媒体海报与动态视觉设计</p>
+                        <div class="work-tags">
+                            <span class="work-tag">社交媒体</span>
+                            <span class="work-tag">海报设计</span>
+                            <span class="work-tag">2021</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="works-footer">
+                <p>以上仅为部分作品展示，更多作品欢迎通过留言板联系查看</p>
+            </div>
+        </section>
+
+        <!-- 留言板页面 -->
+        <section id="contact" class="content-section">
+            <div class="section-header">
+                <h2>
+                    <span class="section-icon"><i class="fas fa-comments"></i></span>
+                    <span class="section-title">留言板</span>
+                </h2>
+                <p class="section-subtitle">欢迎留言咨询或讨论合作</p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-card">
+                        <div class="contact-card-header">
+                            <i class="fas fa-info-circle"></i>
+                            <h3>联系信息</h3>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>邮箱</h4>
+                                <p>kexin.yang@example.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>电话/微信</h4>
+                                <p>138-0000-0000</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>响应时间</h4>
+                                <p>通常24小时内回复</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-card-header">
+                            <i class="fas fa-handshake"></i>
+                            <h3>服务咨询</h3>
+                        </div>
+                        <ul class="service-list">
+                            <li><i class="fas fa-check"></i> 视光咨询与预约</li>
+                            <li><i class="fas fa-check"></i> 平面设计项目洽谈</li>
+                            <li><i class="fas fa-check"></i> 品牌设计需求沟通</li>
+                            <li><i class="fas fa-check"></i> 作品集完整版查看</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="message-board" data-aos="fade-left">
+                    <div class="message-form">
+                        <h3><i class="fas fa-paper-plane"></i> 发送留言</h3>
+                        <form id="messageForm">
+                            <div class="form-group">
+                                <label for="name">
+                                    <i class="fas fa-user"></i> 姓名 *
+                                </label>
+                                <input type="text" id="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">
+                                    <i class="fas fa-envelope"></i> 邮箱 *
+                                </label>
+                                <input type="email" id="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="category">
+                                    <i class="fas fa-tag"></i> 留言类型
+                                </label>
+                                <select id="category">
+                                    <option value="design">设计合作</option>
+                                    <option value="optometry">视光咨询</option>
+                                    <option value="other">其他</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">
+                                    <i class="fas fa-comment"></i> 留言内容 *
+                                </label>
+                                <textarea id="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i> 发送留言
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <div class="message-history">
+                        <h3><i class="fas fa-history"></i> 近期留言</h3>
+                        <div class="messages-container">
+                            <!-- 示例留言 -->
+                            <div class="message-item">
+                                <div class="message-header">
+                                    <span class="message-author">
+                                        <i class="fas fa-user"></i> 张先生
+                                    </span>
+                                    <span class="message-date">2023.10.15</span>
+                                    <span class="message-category">设计合作</span>
+                                </div>
+                                <p class="message-content">您好，看到您的作品集很感兴趣，我们有一个品牌升级项目想与您合作，请问近期是否有时间沟通？</p>
+                            </div>
+                            
+                            <div class="message-item">
+                                <div class="message-header">
+                                    <span class="message-author">
+                                        <i class="fas fa-user"></i> 李女士
+                                    </span>
+                                    <span class="message-date">2023.10.10</span>
+                                    <span class="message-category">视光咨询</span>
+                                </div>
+                                <p class="message-content">杨医生您好，想咨询一下儿童近视防控的相关建议，什么时候方便预约检查？</p>
+                            </div>
+                            
+                            <div class="message-item">
+                                <div class="message-header">
+                                    <span class="message-author">
+                                        <i class="fas fa-user"></i> 王先生
+                                    </span>
+                                    <span class="message-date">2023.10.05</span>
+                                    <span class="message-category">其他</span>
+                                </div>
+                                <p class="message-content">您的设计风格很独特，请问可以查看更多的包装设计案例吗？</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 作品详情模态框 -->
+    <div class="modal" id="workModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">作品标题</h2>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image" id="modalImage"></div>
+                <div class="modal-info">
+                    <h3>项目详情</h3>
+                    <p id="modalDescription">作品描述内容</p>
+                    <div class="modal-tags" id="modalTags"></div>
+                    <div class="modal-meta">
+                        <div class="meta-item">
+                            <i class="fas fa-calendar"></i>
+                            <span id="modalDate">2023</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-tag"></i>
+                            <span id="modalCategory">品牌设计</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部信息 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-eye"></i>
+                <span>杨可欣</span>
+            </div>
+            <p>© 2023 杨可欣 · 视光师 & 平面设计师</p>
+            <p>国家二级验光员 · 自由设计师</p>
+            <div class="footer-links">
+                <a href="#home">主页</a> | 
+                <a href="#about">关于</a> | 
+                <a href="#works">作品</a> | 
+                <a href="#contact">留言</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
